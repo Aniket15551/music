@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: auto;
+  }
+  
+
+.heading{
+    color: white;
+    width:100vw;
+    height:35px;
+    background-color: var(--purple600);
+    display: flex;  
+    gap: 30%;
+    justify-content: center;  
+    justify-content: space-around;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.heading ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10%;
+ }
+ .hero-section{
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    padding: 17%;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+ }
+ .hero-section .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:30px;
+    position: absolute;
+ }
+ .hero-section h1{
+    font-size: 64px;
+ }
+ .hero-section h2{
+    font-size: 32px;
+ }
+
+ .music-section{
+    width: 100vw;
+    height:150vh;
+    display: grid;
+    background: var(--purple300);
+    place-items: center;
+    text-align: center;
+ }
+ .music-section img{
+   width: 80%;
+ }
+
+ .music-section .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+    padding: 17%;
+ }
+ .primary-button{
+    width:15%;
+    height:40px;
+    margin-left: 40%;
+    color: white;
+    background: red;
+ }
+ .primary-button:hover{
+   opacity: 0.8;
+ }
+ .music-section img{
+    margin-top: -15%;
+ }
+
+ .lowmusic{
+    width: 100vw;
+    padding:10%;
+    margin-top: 25%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+ }
+ .lowmusic .lowmusic-container{
+   width: fit-content;
+    margin-top: -10% ;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 20px;
+ }
+
+ .lowmusic .lowmusic-container p{
+    font-weight:bold;
+ }
+ .secondary-button{
+    width: 10%;
+    height: 30px;
+    margin-left: 45%;
+    color: white;
+    background: var(--purple500);
+ }
+ .secondary-button:hover{
+    opacity: 0.8;
+ }
+ .lowmusic .lowmusic-container img{
+    margin-top: 10%;
+    position: relative;
+ }
+
+ 
+ .video-section{
+    width: 100vw;
+    height: 100vh;
+    margin-top: -10%;
+    background-image: url(images/video.png);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    padding: 17%;
+ }
+ .video-section .container{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+ }
+.giftcard{
+    margin-top: 10%;
+    width: 100wh;
+    height: 50vh;
+   
+}
+.giftcard .container{
+    margin: 0% 10%;
+    display: flex;
+   
+    gap: 5%;
+
+}
+.giftcontent{
+    display: flex;
+  
+    flex-direction: column;
+    gap:10px;
+    font-weight: bold;
+}
+.lastbutton{
+    width: 12%;
+    height: 30px;
+    background-color: #1b0058;
+    color: white;
+}
+.lastbutton:hover{
+    opacity: 0.9;
+}
+.footer-upper{
+    height: 30vh;
+    width: 100vw;
+    background-color: #1b0058;
+}
+
+.footer-upper .container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:20px ;
+    color: white;
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-lower{
+    text-align: center;
+    background-color: #270082;
+    color: white;
+}
+
+@media only screen and (max-width: 800px){
+   .lowmusic {
+      display: flex;
+      justify-content: flex-start;
+   }
+  
+   .lowmusic .lowmusic-container{
+      justify-content: left;
+   }
+}
+    
+  
+   
+  
+  
